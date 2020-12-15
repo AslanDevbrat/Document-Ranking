@@ -1,0 +1,10 @@
+allennlp
+allennlp-models
+torchsnooper
+
+pandas
+
+pytest-pythonpath
+
+# Checks style, syntax, and other useful errors.
+pylint==1.8.1

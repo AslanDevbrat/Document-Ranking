@@ -1,0 +1,16 @@
+version: '3'
+services: 
+    train:
+        container_name: "allenrank"
+        build: .
+        # image: allennlp/allennlp:latest
+        volumes:
+            - $HOME/nltk_data:/root/nltk_data
+            - $HOME/.allennlp:/root/.allennlp
+            - $HOME/.cache:/root/.cache
+            - ./:/stage/allennlp
+            # - ${MODEL_DIR}:/tmp/allenrank/
+        command: train experiments/mimics.jsonnet -s /tmp/allenrank -f
+    version:
+        build: .
+        command: --version
