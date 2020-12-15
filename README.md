@@ -2,6 +2,8 @@
 # Document Ranking with AllenNLP
 ## Note: 
 In this project I have used Configuration files for the training, that means you will not find a jupyter notebook for the training insted there is a .jsonnet file which conatin all this, like number of epoch, learning rate, optimizers, dropout ...., do check that [file](https://github.com/AslanDevbrat/Document-Ranking/blob/master/experiments/mimics.jsonnet)
+
+Just run "Run-Me.ipynb"
 ## Usage
 
 First way (Recommended)
